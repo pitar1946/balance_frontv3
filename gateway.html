@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Balance</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <link href="assets/css/global.css" rel="stylesheet"/>
+  <link href="assets/css/gateway.css" rel="stylesheet"/>
+  <link href="assets/css/stepper.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="main-container pb-5">
+  <div class="sidebar">
+    <div class="close-btn-wrapper">
+      <a class="menu-btn pull-right"><i class="material-icons">close</i></a>
+    </div>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gateways.html">Gateways</a></li>
+      <li><a href="#">Reports</a></li>
+    </ul>
+  </div>
+  <nav class="navbar navbar-expand-md navbar-top">
+    <div class="container">
+      <div class="w-100">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <img class="pull-left b-nav-logo" src="./assets/img/b-blue-logo.svg"/>
+          </li>
+          <li>
+            <a class="nav-link menu-btn pull-left ml-4">
+              <img class="burger-menu" src="./assets/img/burger_menu.svg"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-100">
+        <ul class="navbar-nav float-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle user-name" data-toggle="dropdown" href="#0" role="button"
+               aria-haspopup="true" aria-expanded="false"><span class="nav-initials mr-3">jd</span>John Doe</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile.html">Profile</a>
+              <a class="dropdown-item" href="index.html">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="gateway-heading">Create new gateway</h4>
+        <p class="gateway-info">Gateways serve as a way for Balance to contact your payment providers.</p>
+        <p class="gateway-info">You can easily create a new gateway in two steps</p>
+      </div>
+    </div>
+    <div class="row gateway-wizard justify-content-center mt-5">
+      <div id='stepperExample'>
+        <h3>
+          <img class="stepper-img" src="./assets/img/overview.svg">
+          <span class='label'>Create gateway</span>
+        </h3>
+        <div>
+          <form class="form-card-wrapper">
+            <div class="gateway-form-wrapper pt-3 pb-1 px-3">
+              <div>
+                <div class="form-group">
+                  <label class="form-label">Gateway name</label>
+                  <input type="text" class="form-input" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Gateway type</label>
+                  <select class="form-select">
+                    <option>Gateway 1</option>
+                    <option>Gateway 2</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">API key</label>
+                  <input type="text" class="form-input" placeholder="">
+                </div>
+              </div>
+              <div>
+                <div class="form-group">
+                  <label class="form-label">Description</label>
+                  <textarea class="form-textarea" rows="10"></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Step 2 -->
+        <h3>
+          <img class="stepper-img" src="./assets/img/urls.svg">
+          <span class='label'>Validation</span>
+        </h3>
+          <div class="form-card-wrapper justify-content-center">
+            <div class="gateway-success">
+              <h4 class="gateway-heading mb-2">Success</h4>
+              <p class="gateway-info mt-1 mb-4">You have created a new gateway</p>
+              <div class="gateway-success-btn-wrapper">
+                <a href="gateways.html" class="mt-1 btn-block secondary-dark-btn">Back to gateways</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container pb-3">
+    <div class="text-right">
+      <span class="gateway-next-step-info">
+         You can click anytime on one of the previous steps to go back and make changes |
+      </span>
+      <button id="nextButton" class="gateway-next-step">Next step</button>
+    </div>
+  </div>
+  <div class="footer mt-5">
+    <div class="container">
+      <div class="footer-links-wrapper">
+        <div class="text-left">
+          <a class="footer-link mr-3">Terms & Conditions</a>
+          <a class="footer-link">Privacy policy</a>
+        </div>
+        <div class="text-right version">Version 1.0.1</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--   Core JS Files   -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
+<script>
+  $('.menu-btn').click(function () {
+    $('.sidebar').toggleClass('sidebar-open');
+  });
+
+</script>
+<script>
+  let STEPPER;
+  let CURRENT_STEP_INFO;
+
+  let PREV_STEP_BUTTON;
+  let NEXT_STEP_BUTTON;
+  let FINISH_STEP_BUTTON;
+  let RESET_BUTTON;
+
+  const TOTAL_STEPS = 2;
+
+  $(function() {
+    CURRENT_STEP_INFO = $("#currentStep");
+
+    PREV_STEP_BUTTON = $("#prevButton");
+    NEXT_STEP_BUTTON = $("#nextButton");
+    FINISH_STEP_BUTTON = $("#finishButton");
+    RESET_BUTTON = $("#resetButton");
+
+    createStepper();
+    addListeners();
+    handleIndexChangedEvent();
+  });
+
+  function createStepper() {
+    STEPPER = $("#stepperExample").steps({
+      headerTag: 'h3',
+      bodyTag: 'div',
+      cssClass: 'balance-stepper',
+
+      /* --- Templates --- */
+      titleTemplate: '#title#',
+
+      /* --- Behaviour --- */
+      enableAllSteps: false,
+      enablePagination: false,
+      enableKeyNavigation: false,
+      forceMoveForward: false,
+      startIndex: 0,
+
+      /* --- Events --- */
+      onStepChanging: function(event, currentIndex, newIndex) {
+        console.info("onStepChanging", "currentStep:", currentIndex, "nextStep:", newIndex)
+        /* if (some data not valid) {
+          return false
+        } */
+        return true;
+      },
+      onStepChanged: function(event, currentIndex, priorIndex) {
+        console.info("onStepChanged", "currentStep:", currentIndex, "previousStep:", priorIndex)
+        handleIndexChangedEvent();
+      },
+      onFinishing: function(event, currentIndex) {
+        console.info("onFinishing", "currentStep:", currentIndex)
+        /* if (some data not valid on before finish) {
+          return false
+        } */
+        return true;
+      },
+      onFinished: function(event, currentIndex) {
+        RESET_BUTTON.show();
+        console.info("onFinished", "currentStep:", currentIndex)
+      },
+    });
+  }
+
+  function addListeners() {
+    PREV_STEP_BUTTON.click(function() {
+      STEPPER.steps('previous');
+    });
+
+    NEXT_STEP_BUTTON.click(function() {
+      STEPPER.steps('next');
+    });
+
+    FINISH_STEP_BUTTON.click(function() {
+      STEPPER.steps('finish');
+      PREV_STEP_BUTTON.hide()
+      NEXT_STEP_BUTTON.hide()
+      FINISH_STEP_BUTTON.hide()
+    });
+
+    RESET_BUTTON.click(function() {
+      STEPPER.steps('destroy');
+      createStepper();
+      handleIndexChangedEvent();
+    });
+  }
+
+  function handleIndexChangedEvent() {
+    let currentIndex = STEPPER.steps('getCurrentIndex')
+
+    PREV_STEP_BUTTON.show();
+    PREV_STEP_BUTTON.prop('disabled', currentIndex === 0);
+
+    NEXT_STEP_BUTTON.hide();
+    FINISH_STEP_BUTTON.hide();
+
+    RESET_BUTTON.hide();
+
+    if (currentIndex < TOTAL_STEPS) {
+      NEXT_STEP_BUTTON.show();
+    }
+    if (currentIndex === TOTAL_STEPS) {
+      FINISH_STEP_BUTTON.show();
+    }
+
+    CURRENT_STEP_INFO.html(currentIndex);
+
+    console.info("handleIndexChangedEvent - Current Step:" + currentIndex)
+  }
+</script>
+</body>
+</html>

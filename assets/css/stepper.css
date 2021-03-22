@@ -1,0 +1,188 @@
+/** Demo purpose */
+:root {
+    --color-blue: #0DB2F2;
+    --color-blue-dark: #005B96;
+}
+
+.balance-stepper > .steps {
+    margin-bottom: 23px;
+}
+.balance-stepper > .content > .body {
+    text-align: center;
+    font-size: 18px;
+    min-height: 200px;
+}
+
+/*
+ *
+ *
+ --- Stepper CSS Base ---
+ *
+ */
+.balance-stepper {
+    display: block;
+}
+.balance-stepper > .steps ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.balance-stepper > .steps ul > li {
+    display: block;
+    padding: 0;
+}
+.balance-stepper > .steps ul > li > a {
+    outline: 0;
+    color: var(--color-blue);
+}
+
+/* --- Stepper Accessibility --- */
+.balance-stepper > .steps .current-info {
+    position: absolute;
+    left: -999em;
+}
+.balance-stepper > .content > .title {
+    position: absolute;
+    left: -999em;
+}
+
+/* --- Steps --- */
+.balance-stepper > .steps {
+    width: 100%;
+
+    /*background-color: red;*/
+}
+
+.balance-stepper > .steps > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    /*background-color: beige;*/
+}
+.balance-stepper > .steps > ul > li:last-child{
+    margin-right: 0px;
+}
+.balance-stepper > .steps > ul > li {
+    position: relative;
+    padding: 0 16px;
+    margin-right: 32px;
+    /*background-color: #d0f5c1;*/
+}
+
+/* Arrows */
+.balance-stepper > .steps > ul > li + li:before {
+    position: absolute;
+    content: "→";
+    color: var(--color-blue-dark);
+    display: block;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    top: 0px;
+    left: -40px;
+}
+.balance-stepper .stepper-img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.balance-stepper > .steps > ul > li.current + li.done:before,
+.balance-stepper > .steps > ul > li.done + li:before {
+    color: var(--color-blue);
+}
+
+/* Step */
+.balance-stepper > .steps a,
+.balance-stepper > .steps a:hover,
+.balance-stepper > .steps a:active {
+    text-align: center;
+    display: block;
+    width: auto;
+    margin: 0;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    /* background-color: lightgreen; */
+}
+
+/* Icons and Label within step */
+.balance-stepper > .steps a .icon {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+.balance-stepper > .steps a .icon i {
+    line-height: 0;
+}
+/* icon of the step */
+.balance-stepper > .steps a .icon i:nth-child(1) {
+    position: absolute;
+    display: block;
+    font-size: 32px;
+    top: 15px;
+    left: 16px;
+}
+/* label of the step */
+.balance-stepper > .steps a .label {
+    display: block;
+    font-size: 14px;
+}
+
+/* Step disabled */
+.balance-stepper > .steps .disabled a,
+.balance-stepper > .steps .disabled a:hover,
+.balance-stepper > .steps .disabled a:active {
+    color: #aaa;
+    cursor: default;
+}
+.balance-stepper > .steps .disabled a img{
+    filter: grayscale(90%);
+}
+
+/* Step current */
+.balance-stepper > .steps .current a,
+.balance-stepper > .steps .current a:hover,
+.balance-stepper > .steps .current a:active {
+    cursor: default;
+}
+
+/* Step done */
+.balance-stepper > .steps .done a,
+.balance-stepper > .steps .done a:hover,
+.balance-stepper > .steps .done a:active {
+
+}
+
+/* Step error */
+.balance-stepper > .steps .error a,
+.balance-stepper > .steps .error a:hover,
+.balance-stepper > .steps .error a:active {
+
+}
+
+
+/* Content and body of step */
+.balance-stepper > .content {
+    /*background: gray;*/
+}
+.balance-stepper > .content > .body {
+    /*background: green;*/
+}
+{/*
+position: absolute;
+    content: " ";
+    background-image: url("../../assets/img/arrow_right_alt-24px.svg");
+    filter: grayscale(var(--color-blue, 100%));
+    display: block;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    left: -40px;
+*/}
+

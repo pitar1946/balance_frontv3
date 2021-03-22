@@ -1,0 +1,50 @@
+.get-started-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.get-started-content .get-started-info{
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: var(--primary-dark);
+}
+.get-started-content .img-wrapper{
+    background-image: url("../img/get-started-bg.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 500px;
+}
+
+.get-started-content .get-started-btn-wrapper{
+    padding-bottom: 50px;
+}
+.get-started-content .get-started-btn{
+    display: block;
+    width: 300px;
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 0;
+    cursor: pointer;
+    border-radius: .85rem;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: center;
+    outline: 0 !important;
+    vertical-align: middle;
+    border: none;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    background-color: var(--primary-light);
+    color: var(--primary-bg) !important;
+    margin: 30px 0px 30px 0px;
+}
+.get-started-content .get-started-btn:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Balance</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link href="assets/css/global.css" rel="stylesheet"/>
+  <link href="assets/css/profile.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="main-container pb-5">
+  <div class="sidebar">
+    <div class="close-btn-wrapper">
+      <a class="menu-btn pull-right"><i class="material-icons">close</i></a>
+    </div>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gateways.html">Gateways</a></li>
+      <li><a href="#">Reports</a></li>
+    </ul>
+  </div>
+  <nav class="navbar navbar-expand-md navbar-top">
+    <div class="container">
+      <div class="w-100">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <img class="pull-left b-nav-logo" src="./assets/img/b-blue-logo.svg"/>
+          </li>
+          <li>
+            <a class="nav-link menu-btn pull-left ml-4">
+              <img class="burger-menu" src="./assets/img/burger_menu.svg"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-100">
+        <ul class="navbar-nav float-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle user-name" data-toggle="dropdown" href="#0" role="button"
+               aria-haspopup="true" aria-expanded="false"><span class="nav-initials mr-3">jd</span>John Doe</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile.html">Profile</a>
+              <a class="dropdown-item" href="index.html">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-7">
+        <h4 class="profile-heading mb-2">Your profile</h4>
+        <p class="profile-info">You can modify personal information here</p>
+      </div>
+      <div class="col-md-5">
+        <button class="save-exit-btn btn float-right" type="button">Save & Exit</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="user-info-wrapper">
+         <span class="user-initials mb-3">jd</span>
+          <span class="user-name mb-1">John Doe</span>
+          <span class="user-mail">john.doe@gmail.com</span>
+          <span class="user-phone">387 61 123 456</span>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="container mb-5">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-label">First name</label>
+                <input type="text" class="form-input" placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Last name</label>
+                <input type="text" class="form-input" placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Date of birth</label>
+                <input type="text" class="form-input" placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-input" placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Confirm password</label>
+                <input type="password" class="form-input" placeholder="">
+                <a class="password-rules d-block mt-1">See password rules</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-label">Street</label>
+                <input type="text" class="form-input" placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="form-label">City</label>
+                <input type="text" class="form-input" placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="form-label">State</label>
+                <input type="text" class="form-input" placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Country</label>
+                <input type="text" class="form-input" placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Zip code</label>
+                <input type="text" class="form-input" placeholder="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer mt-5">
+    <div class="container">
+      <div class="footer-links-wrapper">
+        <div class="text-left">
+          <a class="footer-link mr-3">Terms & Conditions</a>
+          <a class="footer-link">Privacy policy</a>
+        </div>
+        <div class="text-right version">Version 1.0.1</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--   Core JS Files   -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+  $('.menu-btn').click(function () {
+    $('.sidebar').toggleClass('sidebar-open');
+  });
+
+</script>
+</body>
+</html>

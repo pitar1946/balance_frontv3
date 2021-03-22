@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Balance</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link href="assets/css/global.css" rel="stylesheet"/>
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/stepper.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="main-container">
+  <div class="sidebar">
+    <div class="close-btn-wrapper">
+      <a class="menu-btn pull-right"><i class="material-icons">close</i></a>
+    </div>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gateways.html">Gateways</a></li>
+      <li><a href="#">Reports</a></li>
+    </ul>
+  </div>
+  <nav class="navbar navbar-expand-md navbar-top">
+    <div class="container">
+      <div class="w-100">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link menu-btn pull-left mr-3">
+              <img class="burger-menu" src="./assets/img/burger_menu.svg"/>
+            </a>
+          </li>
+          <li class="nav-item">
+            <img class="pull-left b-nav-logo" src="./assets/img/b-blue-logo.svg"/>
+          </li>
+        </ul>
+      </div>
+      <div class="w-100">
+        <ul class="navbar-nav float-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle user-name" data-toggle="dropdown" href="#0" role="button"
+               aria-haspopup="true" aria-expanded="false"><span class="nav-initials mr-3">jd</span>John Doe</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile.html">Profile</a>
+              <a class="dropdown-item" href="index.html">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="project-heading mb-2">Create new project</h4>
+        <p class="project-info">You can easily create a new project in eight steps</p>
+      </div>
+    </div>
+  </div>
+  <div class="container pb-5">
+    <form class="pb-5">
+      <div id='stepperExample'>
+        <!-- Step 1 -->
+        <h3>
+          <img class="stepper-img" src="./assets/img/overview.svg">
+          <span class='label'>Business info</span>
+        </h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="form-label">Country</label>
+              <input type="text" class="form-input" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="form-label">City</label>
+              <input type="text" class="form-input" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="form-label">State</label>
+              <input type="text" class="form-input" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Zip code</label>
+              <input type="text" class="form-input" placeholder="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="form-label">Street</label>
+              <input type="text" class="form-input" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Structure</label>
+              <select class="form-select ">
+                <option>Structure 1</option>
+                <option>Structure 2</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Industry</label>
+              <input type="text" class="form-input" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Website</label>
+              <input type="text" class="form-input" placeholder="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="form-label">Project name</label>
+              <input type="text" class="form-input" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Description</label>
+              <textarea class="form-textarea" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <h3>
+          <img class="stepper-img" src="./assets/img/overview.svg">
+          <span class='label'>Gateways</span>
+        </h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="d-flex justify-content-end">
+                <span class="project-info-icon"><i class="material-icons">error</i></span>
+              </div>
+              <div class="card-body">
+                <div class="card-img-wrapper mb-3">
+                  <img class="card-img" src="./assets/img/stripe_logo.png" alt="logo">
+                </div>
+                <div class="mb-4 text-center">
+                  <h3 class="card-project-name mb-4">Stripe - gateway</h3>
+                  <input class="project-gateway-btn" id="Radio1" name="Radios" type="radio" value="Option 1" checked="checked">
+                  <label for="Radio1">Gateway selected</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-nav">
+              <div class="d-flex justify-content-end">
+                <span class="project-info-icon"><i class="material-icons">error</i></span>
+              </div>
+              <div class="card-body">
+                <div class="card-img-wrapper mb-3">
+                  <img class="card-img" src="./assets/img/authorize_logo.png" alt="logo">
+                </div>
+                <div class="mb-4 text-center">
+                  <h3 class="card-project-name mb-4">Authorize.net - gateway</h3>
+                  <input class="project-gateway-btn" id="Radio3" name="Radios" type="radio" value="Option 3" >
+                  <label for="Radio3">Use this gateway</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <h3>
+          <img class="stepper-img" src="./assets/img/overview.svg">
+          <span class='label'>Rules</span>
+        </h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="mb-2">
+              <input class="project-rules-btn" id="Radio4" name="Radios" type="radio" value="Option 2">
+              <label for="Radio4">Manual selection</label>
+            </div>
+            <div class="mb-2">
+              <input class="project-rules-btn" id="Radio2" name="Radios" type="radio" value="Option 2">
+              <label for="Radio2">Simple load balancing</label>
+            </div>
+            <div class="mb-2">
+              <input class="project-rules-btn" id="Radio5" name="Radios" type="radio" value="Option 3" checked="checked">
+              <label for="Radio5">Payment amount balancing</label>
+            </div>
+            <div class="mb-2">
+              <input class="project-rules-btn" id="Radio6" name="Radios" type="radio" value="Option 4">
+              <label for="Radio6">Max uses balancing</label>
+            </div>
+            <div class="mb-2">
+              <input class="project-rules-btn" id="Radio7" name="Radios" type="radio" value="Option 5">
+              <label for="Radio7">Max amount balancing</label>
+            </div>
+          </div>
+          <div class="col-md-7 offset-md-1">
+            <div class="mb-3">
+              <label class="form-label">Description</label>
+              <p class="project-rules-description">Amount of money per gateway (< n amount to gateway A, > n amount gateway B, maximum transaction for each selected gateway input fields and dropdown with < > =).</p>
+            </div>
+            <div class="project-rule-grid-wrapper mb-3">
+              <div class="project-gateway-name-wrapper">
+                <label class="form-label">Use gateway</label>
+                <span class="project-gateway-name">Stripe</span>
+              </div>
+              <div class="mt-4 pt-2">
+                <div class="project-gateway-select-wrapper">
+                  <select class="project-gateway-form-select">
+                    <option>=</option>
+                    <option><</option>
+                  </select>
+                </div>
+              </div>
+              <div class="">
+                <div class="project-gateway-amount-wrapper">
+                  <label class="form-label">Amount</label>
+                  <input type="text" class="project-form-input" placeholder="500">
+                </div>
+              </div>
+            </div>
+            <div class="project-rule-grid-wrapper mb-3">
+              <div class="project-gateway-name-wrapper">
+                <label class="form-label">Use gateway</label>
+                <span class="project-gateway-name">Authorize.NET</span>
+              </div>
+              <div class="mt-4 pt-2">
+                <div class="project-gateway-select-wrapper">
+                  <select class="project-gateway-form-select">
+                    <option><</option>
+                    <option>=</option>
+                  </select>
+                </div>
+              </div>
+              <div class="">
+                <div class="project-gateway-amount-wrapper">
+                  <label class="form-label">Amount</label>
+                  <input type="text" class="project-form-input" placeholder="500">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <h3>
+          <img class="stepper-img" src="./assets/img/overview.svg">
+          <span class='label'>Countries</span>
+        </h3>
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="project-rules-heading mb-4">Stripe</h4>
+            <div class="form-group">
+              <label class="form-label">Permission type</label>
+              <select class="form-select">
+                <option>Whitelisted</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Country</label>
+              <select class="form-select">
+                <option>USA</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Selected countries</label>
+              <div class="project-countries-tag-wrapper"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4 class="project-rules-heading mb-4">Authorize.NET</h4>
+            <div class="form-group">
+              <label class="form-label">Permission type</label>
+              <select class="form-select">
+                <option>Blacklisted</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Country</label>
+              <select class="form-select">
+                <option>China</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Selected countries</label>
+              <div class="project-countries-tag-wrapper"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4 class="project-rules-heading mb-4">Gateway 3</h4>
+            <div class="form-group">
+              <label class="form-label">Permission type</label>
+              <select class="form-select">
+                <option>All countries</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Step 5 -->
+        <h3>
+          <img class="stepper-img" src="./assets/img/overview.svg">
+          <span class='label'>URLs</span>
+        </h3>
+        <div class="row">
+          <div class="col-md-4">
+            <label class="form-label">Authorized URLs</label>
+            <div class="project-urls-info mb-5">
+              <p>To prevent a third party from using your Balance widget on their own website, you can restrict access to a list of URLs that you specifically authorize.</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Permission</label>
+              <select class="form-select">
+                <option>Allow specific URLs</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <label class="form-label">Selected countries</label>
+            <div class="project-urls-tag-wrapper"></div>
+          </div>
+        </div>
+        <!-- Step 6 -->
+        <h3>
+          <img class="stepper-img" src="./assets/img/overview.svg">
+          <span class='label'>Users</span>
+        </h3>
+        <div class="row">
+          <div class="col-md-4">
+            <label class="form-label">Allowed users</label>
+            <div class="project-users-info mb-5">
+              <p>Add a list of users you wish to grant access to this project. You can skip this step and add a user later.</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label">User email</label>
+              <input type="text" class="form-input" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="form-label">User role</label>
+              <select class="form-select">
+                <option>User role</option>
+              </select>
+            </div>
+            <div class="form-group mt-5 project-add-user-btn-wrapper">
+              <button class="btn project-add-user-btn">Add user</button>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <label class="form-label">Added users</label>
+            <div class="project-users-wrapper">
+              <div class="project-users-labels-wrapper">
+                <div class="mr-2">
+                  <label class="project-user-label">User | role</label>
+                </div>
+                <div class="ml-2">
+                  <label class="project-user-label">Status</label>
+                </div>
+              </div>
+              <div class="project-users-tag-wrapper">
+                <div class="mr-2">
+                  <div class="project-user-email">john.doe@email.com | Administrator</div>
+                </div>
+                <div class="ml-2">
+                  <div class="project-user-status">Pending..</div>
+                </div>
+                <div>
+                  <div class="project-delete-btn-wrapper mt-1">
+                    <button type="button" class="btn btn-sm project-delete-user">
+                      <i class="material-icons project-close-icon">close</i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-users-tag-wrapper">
+                <div class="mr-2">
+                  <div class="project-user-email">jane.doe@email.com | Developer</div>
+                </div>
+                <div class="ml-2">
+                  <div class="project-user-status">Pending..</div>
+                </div>
+                <div>
+                  <div class="project-delete-btn-wrapper mt-1">
+                    <button type="button" class="btn btn-sm project-delete-user">
+                      <i class="material-icons project-close-icon">close</i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Step 7 -->
+        <h3>
+          <img class="stepper-img" src="./assets/img/overview.svg">
+          <span class='label'>Widgets</span>
+        </h3>
+        <div class="row justify-content-center">
+          <div class="project-almost-there-wrapper">
+            <h4 class="project-almost-there-heading mb-2">Almost there</h4>
+            <p class="project-almost-there-info mb-4">All you need to do now is to follow the integration instructions for a platform of your choice <br/> or export the information to send to your developer(s).</p>
+            <div class="accordion pb-5" id="exampleAccordion1">
+              <div class="card">
+                <div class="card-header" id="exItem1Header">
+                  <img class="accordion-logo" src="./assets/img/shopify_icon.png" alt="accordion-logo">
+                  <button class="btn btn-link accordion-link collapsed" type="button" data-toggle="collapse" data-target="#exItem1" aria-expanded="false" aria-controls="exItem1">Shopify</button>
+                </div>
+                <div id="exItem1" class="collapse show" aria-labelledby="exItem1Header" data-parent="#exampleAccordion1">
+                  <div class="card-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="exItemHeader">
+                  <img class="accordion-logo" src="./assets/img/woocommerce_icon.png" alt="accordion-logo">
+                  <button class="btn btn-link accordion-link" type="button" data-toggle="collapse" data-target="#exItem" aria-expanded="false" aria-controls="exItem2">WooCommerce</button>
+                </div>
+                <div id="exItem" class="collapse" aria-labelledby="exItem2Header" data-parent="#exampleAccordion1">
+                  <div class="card-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-almost-there-btn-wrapper">
+              <button class="btn project-almost-there-btn">Export instructions as PDF</button>
+            </div>
+          </div>
+        </div>
+        <!-- Step 8 -->
+        <h3>
+          <img class="stepper-img" src="./assets/img/overview.svg">
+          <span class='label'>Overview</span>
+        </h3>
+        <div class="row justify-content-center">
+          <div class="project-overview-wrapper">
+            <h4 class="project-overview-heading mb-2">Almost there</h4>
+            <p class="project-overview-info mb-4">All you need to do now is to follow the integration instructions for a platform of your choice <br/> or export the information to send to your developer(s).</p>
+            <div class="accordion" id="exampleAccordion2">
+              <div class="card">
+                <div class="card-header" id="exItem2Header">
+                  <button class="btn btn-link accordion-link collapsed" type="button" data-toggle="collapse" data-target="#exItem2" aria-expanded="false" aria-controls="exItem1">Business info</button>
+                </div>
+                <div id="exItem2" class="collapse show" aria-labelledby="exItem1Header" data-parent="#exampleAccordion2">
+                  <div class="card-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="exItem3Header">
+                  <button class="btn btn-link accordion-link" type="button" data-toggle="collapse" data-target="#exItem2" aria-expanded="false" aria-controls="exItem2">Gateways</button>
+                </div>
+                <div id="exItem3" class="collapse" aria-labelledby="exItem2Header" data-parent="#exampleAccordion2">
+                  <div class="card-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="exItem4Header">
+                  <button class="btn btn-link accordion-link" type="button" data-toggle="collapse" data-target="#exItem3" aria-expanded="false" aria-controls="exItem3">Rules</button>
+                </div>
+                <div id="exItem4" class="collapse" aria-labelledby="exItem3Header" data-parent="#exampleAccordion2">
+                  <div class="card-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="exItem5Header">
+                  <button class="btn btn-link accordion-link" type="button" data-toggle="collapse" data-target="#exItem4" aria-expanded="false" aria-controls="exItem4">Countries</button>
+                </div>
+                <div id="exItem5" class="collapse" aria-labelledby="exItem4Header" data-parent="#exampleAccordion2">
+                  <div class="card-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="exItem6Header">
+                  <button class="btn btn-link accordion-link" type="button" data-toggle="collapse" data-target="#exItem5" aria-expanded="false" aria-controls="exItem5">URLs</button>
+                </div>
+                <div id="exItem6" class="collapse" aria-labelledby="exItem5Header" data-parent="#exampleAccordion2">
+                  <div class="card-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="exItem7Header">
+                  <button class="btn btn-link accordion-link" type="button" data-toggle="collapse" data-target="#exItem6" aria-expanded="false" aria-controls="exItem6">Users</button>
+                </div>
+                <div id="exItem7" class="collapse" aria-labelledby="exItem6Header" data-parent="#exampleAccordion2">
+                  <div class="card-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="exItem8Header">
+                  <button class="btn btn-link accordion-link" type="button" data-toggle="collapse" data-target="#exItem7" aria-expanded="false" aria-controls="exItem7">Widgets</button>
+                </div>
+                <div id="exItem8" class="collapse" aria-labelledby="exItem7Header" data-parent="#exampleAccordion2">
+                  <div class="card-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-right mt-3">
+      <span class="project-next-step-info">
+         You can click anytime on one of the previous steps to go back and make changes |
+      </span>
+        <a id="nextButton" class="project-next-step">Next step</a>
+      </div>
+    </form>
+  </div>
+  <div class="footer mt-5">
+    <div class="container">
+      <div class="footer-links-wrapper mt-5">
+        <div class="text-left">
+          <a class="footer-link mr-3">Terms & Conditions</a>
+          <a class="footer-link">Privacy policy</a>
+        </div>
+        <div class="text-right version">Version 1.0.1</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--   Core JS Files   -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
+<script>
+  $('.menu-btn').click(function () {
+    $('.sidebar').toggleClass('sidebar-open');
+  });
+
+</script>
+<script>
+  let STEPPER;
+  let CURRENT_STEP_INFO;
+
+  let PREV_STEP_BUTTON;
+  let NEXT_STEP_BUTTON;
+  let FINISH_STEP_BUTTON;
+  let RESET_BUTTON;
+
+  const TOTAL_STEPS = 8;
+
+  $(function() {
+    CURRENT_STEP_INFO = $("#currentStep");
+
+    PREV_STEP_BUTTON = $("#prevButton");
+    NEXT_STEP_BUTTON = $("#nextButton");
+    FINISH_STEP_BUTTON = $("#finishButton");
+    RESET_BUTTON = $("#resetButton");
+
+    createStepper();
+    addListeners();
+    handleIndexChangedEvent();
+  });
+
+  function createStepper() {
+    STEPPER = $("#stepperExample").steps({
+      headerTag: 'h3',
+      bodyTag: 'div',
+      cssClass: 'balance-stepper',
+
+      /* --- Templates --- */
+      titleTemplate: '#title#',
+
+      /* --- Behaviour --- */
+      enableAllSteps: false,
+      enablePagination: false,
+      enableKeyNavigation: false,
+      forceMoveForward: false,
+      startIndex: 0,
+
+      /* --- Events --- */
+      onStepChanging: function(event, currentIndex, newIndex) {
+        console.info("onStepChanging", "currentStep:", currentIndex, "nextStep:", newIndex)
+        /* if (some data not valid) {
+          return false
+        } */
+        return true;
+      },
+      onStepChanged: function(event, currentIndex, priorIndex) {
+        console.info("onStepChanged", "currentStep:", currentIndex, "previousStep:", priorIndex)
+        handleIndexChangedEvent();
+      },
+      onFinishing: function(event, currentIndex) {
+        console.info("onFinishing", "currentStep:", currentIndex)
+        /* if (some data not valid on before finish) {
+          return false
+        } */
+        return true;
+      },
+      onFinished: function(event, currentIndex) {
+        RESET_BUTTON.show();
+        console.info("onFinished", "currentStep:", currentIndex)
+      },
+    });
+  }
+
+  function addListeners() {
+    PREV_STEP_BUTTON.click(function() {
+      STEPPER.steps('previous');
+    });
+
+    NEXT_STEP_BUTTON.click(function() {
+      STEPPER.steps('next');
+    });
+
+    FINISH_STEP_BUTTON.click(function() {
+      STEPPER.steps('finish');
+      PREV_STEP_BUTTON.hide()
+      NEXT_STEP_BUTTON.hide()
+      FINISH_STEP_BUTTON.hide()
+    });
+
+    RESET_BUTTON.click(function() {
+      STEPPER.steps('destroy');
+      createStepper();
+      handleIndexChangedEvent();
+    });
+  }
+
+  function handleIndexChangedEvent() {
+    let currentIndex = STEPPER.steps('getCurrentIndex')
+
+    PREV_STEP_BUTTON.show();
+    PREV_STEP_BUTTON.prop('disabled', currentIndex === 0);
+
+    NEXT_STEP_BUTTON.hide();
+    FINISH_STEP_BUTTON.hide();
+
+    RESET_BUTTON.hide();
+
+    if (currentIndex < TOTAL_STEPS) {
+      NEXT_STEP_BUTTON.show();
+    }
+    if (currentIndex === TOTAL_STEPS) {
+      FINISH_STEP_BUTTON.show();
+    }
+
+    CURRENT_STEP_INFO.html(currentIndex);
+
+    console.info("handleIndexChangedEvent - Current Step:" + currentIndex)
+  }
+</script>
+</body>
+</html>

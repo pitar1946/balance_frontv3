@@ -1,0 +1,170 @@
+.auth-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-bg);
+}
+
+.section {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    padding: 0;
+}
+
+.section.section-left {
+    width: 25%;
+    left: 0;
+    background: var(--primary-light);
+    padding: 0;
+    flex-direction: column;
+}
+
+.section.section-right {
+    right: 0;
+    width: 75%;
+    background: var(--primary-bg);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-wrapper .create-account-link {
+    color: var(--primary-light) !important;
+    cursor: pointer;;;
+}
+.auth-wrapper .create-account-link:hover{
+    text-decoration: none;
+}
+.auth-wrapper .form-wrapper {
+    width: 500px;
+    padding:  20px 0px;
+}
+
+.auth-wrapper .form-label {
+    font-size: 1rem !important;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: var(--primary-dark);
+}
+
+.auth-wrapper .grid-form-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.auth-wrapper .form-check .form-check-input:checked ~ .form-check-sign .check {
+    background: var(--primary-dark) !important;
+}
+
+.auth-wrapper .form-check .form-check-sign .check {
+    border: 1px solid #AAAAAA !important;
+}
+
+.auth-wrapper .forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 0.875rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.auth-wrapper .forgot-password a{
+    color: #AAAAAA !important;
+    text-decoration: none;
+}
+
+.auth-wrapper .logo-wrapper,
+.auth-wrapper .img-wrapper {
+    width: 100%;
+    height: 50%;
+}
+.auth-wrapper .logo-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth-wrapper .logo{
+    height: 100px;
+}
+.auth-wrapper .img-wrapper {
+    background-image: url("../img/login-visual-blue_LG.svg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+}
+.auth-wrapper .get-started-info{
+    font-size: 1.1rem !important;
+    font-weight: 300;
+}
+.auth-wrapper .auth-steps{
+    color: var(--secondary-gray);
+    font-size: 1rem;
+}
+.auth-wrapper .register-payment-plan-wrapper{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.auth-wrapper .register-payment-plan-item{
+    background-color: var(--card-bg);
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+.auth-wrapper .register-payment-plan-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.auth-wrapper .register-payment-plan-img{
+    height: 44px;
+}
+.auth-wrapper .register-payment-plan-heading,
+.auth-wrapper .register-payment-plan-price{
+    font-size: 21px;
+    color: var(--secondary-dark);
+}
+
+.auth-wrapper .register-payment-plan-price span{
+    color: var(--secondary-gray);
+    font-size: 14px;
+}
+.auth-wrapper .register-payment-plan-info{
+    font-size: 14px;
+    color: var(--secondary-dark);
+}
+.auth-wrapper .register-payment-plan-button-wrapper{
+   width: 100%;
+}
+.payment-btn{
+    opacity: 0;
+    position: absolute;
+}
+
+.payment-btn + label{
+    cursor: pointer;
+    padding: 5px 10px;
+    background: rgba(27, 197, 189, 0.5);
+    color: var(--primary-bg);
+    font-weight: 500;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0px !important;
+}
+
+.payment-btn:checked + label{
+    background: var(--success);
+    border: none;
+    color: var(--primary-bg);
+}
+.auth-wrapper .inline-form-input-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
